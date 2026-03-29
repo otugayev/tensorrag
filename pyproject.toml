@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensorrag"
+version = "0.1.0"
+description = "A toy RAG system that combines text retrieval with a sparse tensor of orthogonal aspects."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai",
+  "python-dotenv",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Operating System :: OS Independent",
+]
+
+[project.scripts]
+tensorrag = "tensorrag.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tensorrag*"]

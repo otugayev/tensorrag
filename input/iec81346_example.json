@@ -1,0 +1,179 @@
+{
+  "axis_meta": {
+    "product": {
+      "role": "what_it_is",
+      "aliases": [
+        "product",
+        "component",
+        "part",
+        "equipment",
+        "asset",
+        "cabinet",
+        "circuit breaker",
+        "contacts"
+      ]
+    },
+    "location": {
+      "role": "where_it_is",
+      "aliases": [
+        "where",
+        "location",
+        "place",
+        "building",
+        "floor",
+        "room",
+        "space"
+      ]
+    },
+    "function": {
+      "role": "what_it_does",
+      "aliases": [
+        "function",
+        "capability",
+        "purpose",
+        "operation",
+        "task",
+        "protection",
+        "switching",
+        "power supply"
+      ]
+    }
+  },
+  "axes": {
+    "function": {
+      "=WP1 Liquid Transport": null,
+      "=WP1 Liquid Transport.=WC1 Power Supply": "=WP1 Liquid Transport",
+      "=WP1 Liquid Transport.=WC1 Power Supply.=FC1 Protection": "=WP1 Liquid Transport.=WC1 Power Supply",
+      "=WP1 Liquid Transport.=WC1 Power Supply.=QA1 Switching": "=WP1 Liquid Transport.=WC1 Power Supply"
+    },
+    "product": {
+      "-UC1 Cabinet": null,
+      "-UC1 Cabinet.-QA1 Circuit Breaker": "-UC1 Cabinet",
+      "-UC1 Cabinet.-QA1 Circuit Breaker.-Q1 Contacts": "-UC1 Cabinet.-QA1 Circuit Breaker"
+    },
+    "location": {
+      "+B1 Building": null,
+      "+B1 Building.+S3 Floor": "+B1 Building",
+      "+B1 Building.+S3 Floor.+R2 Room": "+B1 Building.+S3 Floor"
+    }
+  },
+  "tensor": [
+    {
+      "function": "=WP1 Liquid Transport.=WC1 Power Supply",
+      "product": "-UC1 Cabinet",
+      "location": "+B1 Building.+S3 Floor.+R2 Room"
+    },
+    {
+      "function": "=WP1 Liquid Transport.=WC1 Power Supply.=FC1 Protection",
+      "product": "-UC1 Cabinet.-QA1 Circuit Breaker",
+      "location": "+B1 Building.+S3 Floor.+R2 Room"
+    },
+    {
+      "function": "=WP1 Liquid Transport.=WC1 Power Supply.=QA1 Switching",
+      "product": "-UC1 Cabinet.-QA1 Circuit Breaker",
+      "location": "+B1 Building.+S3 Floor.+R2 Room"
+    }
+  ],
+  "text": [
+    {
+      "id": "chunk_001",
+      "text": "The function-oriented structure contains =WP1 Liquid Transport, =WC1 Power Supply, =FC1 Protection, and =QA1 Switching."
+    },
+    {
+      "id": "chunk_002",
+      "text": "The product-oriented structure contains -UC1 Cabinet, -QA1 Circuit Breaker, and -Q1 Contacts."
+    },
+    {
+      "id": "chunk_003",
+      "text": "The location-oriented structure contains +B1 Building, +S3 Floor, and +R2 Room."
+    },
+    {
+      "id": "chunk_004",
+      "text": "The cabinet -UC1 Cabinet in +B1 Building +S3 Floor +R2 Room supports =WP1 Liquid Transport =WC1 Power Supply."
+    },
+    {
+      "id": "chunk_005",
+      "text": "The circuit breaker -UC1 Cabinet -QA1 Circuit Breaker in +B1 Building +S3 Floor +R2 Room performs =WP1 Liquid Transport =WC1 Power Supply =FC1 Protection."
+    },
+    {
+      "id": "chunk_006",
+      "text": "The circuit breaker -UC1 Cabinet -QA1 Circuit Breaker in +B1 Building +S3 Floor +R2 Room performs =WP1 Liquid Transport =WC1 Power Supply =QA1 Switching."
+    },
+    {
+      "id": "chunk_007",
+      "text": "From the function aspect, the object part =WP1 Liquid Transport =WC1 Power Supply =FC1 Protection / -UC1 Cabinet -QA1 Circuit Breaker identifies the protection part of the circuit breaker."
+    },
+    {
+      "id": "chunk_008",
+      "text": "From the function aspect, the object part =WP1 Liquid Transport =WC1 Power Supply =QA1 Switching / -UC1 Cabinet -QA1 Circuit Breaker identifies the switching part of the circuit breaker."
+    },
+    {
+      "id": "chunk_009",
+      "text": "From the location aspect, the object part -UC1 Cabinet / +B1 Building +S3 Floor +R2 Room identifies the cabinet in the room."
+    },
+    {
+      "id": "chunk_010",
+      "text": "The contacts -Q1 Contacts are a part of -QA1 Circuit Breaker inside -UC1 Cabinet."
+    },
+    {
+      "id": "chunk_011",
+      "text": "The product hierarchy is -UC1 Cabinet, then -QA1 Circuit Breaker, then -Q1 Contacts."
+    },
+    {
+      "id": "chunk_012",
+      "text": "The location hierarchy is +B1 Building, then +S3 Floor, then +R2 Room."
+    },
+    {
+      "id": "chunk_013",
+      "text": "The subsystem represented by -UC1 Cabinet is an auxiliary electrical assembly associated with =WP1 Liquid Transport."
+    },
+    {
+      "id": "chunk_014",
+      "text": "Within the function-oriented structure, =WC1 Power Supply is a subfunction of =WP1 Liquid Transport."
+    },
+    {
+      "id": "chunk_015",
+      "text": "Within the function-oriented structure, =FC1 Protection belongs to =WP1 Liquid Transport =WC1 Power Supply."
+    },
+    {
+      "id": "chunk_016",
+      "text": "Within the function-oriented structure, =QA1 Switching belongs to =WP1 Liquid Transport =WC1 Power Supply."
+    },
+    {
+      "id": "chunk_017",
+      "text": "The cabinet -UC1 Cabinet contains the product -QA1 Circuit Breaker."
+    },
+    {
+      "id": "chunk_018",
+      "text": "The circuit breaker -UC1 Cabinet -QA1 Circuit Breaker contains the product -Q1 Contacts."
+    },
+    {
+      "id": "chunk_019",
+      "text": "The cabinet -UC1 Cabinet is installed in +B1 Building +S3 Floor +R2 Room."
+    },
+    {
+      "id": "chunk_020",
+      "text": "The circuit breaker -UC1 Cabinet -QA1 Circuit Breaker is installed in +B1 Building +S3 Floor +R2 Room."
+    },
+    {
+      "id": "chunk_021",
+      "text": "In this strict example, -UC1 Cabinet -QA1 Circuit Breaker is the device that implements =WP1 Liquid Transport =WC1 Power Supply =FC1 Protection."
+    },
+    {
+      "id": "chunk_022",
+      "text": "In this strict example, -UC1 Cabinet -QA1 Circuit Breaker is the device that implements =WP1 Liquid Transport =WC1 Power Supply =QA1 Switching."
+    },
+    {
+      "id": "chunk_023",
+      "text": "In this strict example, -Q1 Contacts are modeled only as a product part of -QA1 Circuit Breaker and not as an independent functional performer."
+    },
+    {
+      "id": "chunk_024",
+      "text": "A cabinet located in +B1 Building +S3 Floor +R2 Room contains the breaker that provides switching and protection for the power supply path related to =WP1 Liquid Transport."
+    },
+    {
+      "id": "chunk_025",
+      "text": "This subsystem is located in +R2 Room on +S3 Floor of +B1 Building and supports the liquid transport power supply chain."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+~$*.xlsx
+.venv*/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+cache/*.tensor_cache*.json
+docs/article/archive/
+docs/article/
+docs/article/*.docx
